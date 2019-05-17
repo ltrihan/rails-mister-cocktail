@@ -1,1 +1,8 @@
-<h1>Ici le cocktail <%= @cocktail.name %></h1>
+<div class="container">
+  <h2><%= @cocktail.name %></h2>
+
+  <p><%= link_to 'Afficher les doses disponibles', cocktail_doses_path(@cocktail), class: 'btn btn-primary'%></p>
+  <%= link_to 'Retour à la liste des cocktails', cocktails_path, class: 'btn btn-danger' %>
+
+
+</div>
