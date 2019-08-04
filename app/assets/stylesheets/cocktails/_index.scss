@@ -23,6 +23,10 @@ a:hover {
 }
 
 #banner-cocktails-index a {
+  text-decoration: none;
+}
+
+#banner-cocktails-index a.btn-home {
   display: block;
   margin-top: 40px;
   margin-left: auto;
