@@ -2,13 +2,13 @@
 
   <h1 class="text-center">Liste des cocktails</h1>
 
-  <ul class="list-group">
+  <div class="cards">
     <% @cocktails.each do |cocktail| %>
-      <li class="list-group-item">
-        <%= link_to cocktail.name, cocktail_path(cocktail) %>
-      </li>
+      <div class="card-cocktail" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(cocktail.photo)">
+        <%= cocktail.name %>
+      </div>
     <% end %>
-  </ul>
+  </div>
 
   <%= link_to "Create a new cocktail", new_cocktail_path %>
 
