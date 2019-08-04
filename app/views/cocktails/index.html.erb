@@ -1,15 +1,19 @@
-<div class="container">
+<div id="banner-cocktails-index">
 
-  <h1 class="text-center">Liste des cocktails</h1>
+  <div class="container">
 
-  <div class="cards">
-    <% @cocktails.each do |cocktail| %>
-      <div class="card-cocktail" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(cocktail.photo)">
-        <%= cocktail.name %>
-      </div>
-    <% end %>
+    <h1 class="text-center">Liste des cocktails</h1>
+
+    <div class="cards">
+      <% @cocktails.each do |cocktail| %>
+        <div class="card-cocktail" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path(cocktail.photo) %>)">
+          <%= cocktail.name %>
+        </div>
+      <% end %>
+    </div>
+
+    <%= link_to "Create a new cocktail", new_cocktail_path %>
+
   </div>
-
-  <%= link_to "Create a new cocktail", new_cocktail_path %>
 
 </div>
