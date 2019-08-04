@@ -20,12 +20,10 @@
 }
 
 .cards:hover .card-cocktail{
-  filter:blur(3px);
   opacity:.5;
   box-shadow:none;
 }
 .cards:hover .card-cocktail:hover{
-  filter:blur(0px);
   opacity:1;
   box-shadow:0 8px 20px 0px rgba(0,0,0,0.125);
 }
