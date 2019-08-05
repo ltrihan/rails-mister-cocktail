@@ -1,0 +1,16 @@
+#cocktail-show {
+  background-image: linear-gradient(180deg,rgba(0,0,0,.5),rgba(0,0,0,.5) 90%), asset-url('muresubite.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+#cocktail-show h1 {
+  font-size: 3rem;
+  font-family: 'Carter One', cursive;
+  margin-bottom: 40px;
+  padding-top: 40px;
+}

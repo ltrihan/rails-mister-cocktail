@@ -1,20 +1,29 @@
-.btn-home {
+.btn-list {
   background: #FF416C;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  padding: 16px;
-  width: 240px;
-  border-radius: 8px;
-  text-align: center;
 }
 
-// .btn-home-create {
-//   background: #348F50;  /* fallback for old browsers */
-//   background: -webkit-linear-gradient(to right, #56B4D3, #348F50);  /* Chrome 10-25, Safari 5.1-6 */
-//   background: linear-gradient(to right, #56B4D3, #348F50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.btn-create {
+  background: #134E5E;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #71B280, #134E5E);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #71B280, #134E5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
-//   padding: 10px;
-//   width: 200px;
-//   border-radius: 2px;
-// }
+.btn-list, .btn-create {
+  padding: 16px 32px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 8px;
+}
+
+.btn-list:hover, .btn-create:hover {
+  background-position: right center;
+  text-decoration: none;
+}
+
+.btn-list:hover a, .btn-create:hover a {
+  text-decoration: none;
+}
