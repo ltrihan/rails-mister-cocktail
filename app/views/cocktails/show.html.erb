@@ -2,7 +2,15 @@
   <div class="container">
     <h1><%= @cocktail.name %></h1>
 
-    <p><%= link_to 'Afficher les doses disponibles', cocktail_doses_path(@cocktail), class: 'btn-create'%></p>
+    <div class="recette">
+      <ul>
+        <li>Ajouter 3 cl de mûre</li>
+        <li>Ajouter 20 cl de limonade</li>
+        <li>Ajouter 10 cl de rhum blanc</li>
+      </ul>
+    </div>
+
+    <%= link_to 'Afficher les doses conseillées', cocktail_doses_path(@cocktail), class: 'btn-create'%>
     <%= link_to 'Retour à la liste des cocktails', cocktails_path, class: 'btn-list' %>
 
   </div>
