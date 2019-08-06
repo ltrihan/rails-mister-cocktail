@@ -6,21 +6,42 @@
   width: 100%;
   height: 100vh;
   text-align: center;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #cocktail-show h1 {
   font-size: 3rem;
   font-family: 'Carter One', cursive;
-  margin-bottom: 40px;
-  padding-top: 40px;
+  margin-bottom: 160px;
+  padding-top: 80px;
 }
 
 #cocktail-show ul {
   list-style: decimal;
   list-style-position: inside;
-  margin: auto;
+  padding: 0px;
 }
+
+#cocktail-show .recette {
+  color: black;
+  background-color: white;
+  opacity: .8;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  width: 70%;
+}
+
+#cocktail-show .buttons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 160px;
+}
+
+
+// Large devices (desktops, 992px and up)
+// @media (min-width: 992px) {
+//   #cocktail-show .recette {
+//     width: 70%;
+//   }
+// }

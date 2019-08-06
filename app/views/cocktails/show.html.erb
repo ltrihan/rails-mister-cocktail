@@ -3,15 +3,20 @@
     <h1><%= @cocktail.name %></h1>
 
     <div class="recette">
+      <p>Suivez la recette du chef, et shakez après chaque ajout.</p>
       <ul>
-        <li>Ajouter 3 cl de mûre</li>
-        <li>Ajouter 20 cl de limonade</li>
-        <li>Ajouter 10 cl de rhum blanc</li>
+        <li>Ajoutez 3 cl de mûre,</li>
+        <li>Ajoutez 20 cl de limonade,</li>
+        <li>Ajoutez 10 cl de rhum blanc,</li>
+        <li>Ajoutez de la glace pilée,</li>
+        <li>C'est prêt, dégustez !</li>
       </ul>
     </div>
 
-    <%= link_to 'Afficher les doses conseillées', cocktail_doses_path(@cocktail), class: 'btn-create'%>
-    <%= link_to 'Retour à la liste des cocktails', cocktails_path, class: 'btn-list' %>
+    <div class="buttons">
+      <%= link_to 'Afficher les doses conseillées', cocktail_doses_path(@cocktail), class: 'btn-create'%>
+      <%= link_to 'Retour à la liste des cocktails', cocktails_path, class: 'btn-list' %>
+    </div>
 
   </div>
 </div>
