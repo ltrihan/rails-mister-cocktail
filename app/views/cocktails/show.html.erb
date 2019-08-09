@@ -4,13 +4,9 @@
 
     <div class="recette">
       <p>Suivez la recette du chef, et shakez après chaque ajout.</p>
-      <ul>
-        <li>Ajoutez 3 cl de mûre,</li>
-        <li>Ajoutez 20 cl de limonade,</li>
-        <li>Ajoutez 10 cl de rhum blanc,</li>
-        <li>Ajoutez de la glace pilée,</li>
-        <li>C'est prêt, dégustez !</li>
-      </ul>
+      <% if @cocktail.doses.nil? %>
+        <p>Pas encore de dose disponible pour ce cocktail.</p>
+      <% end %>
     </div>
 
     <div class="buttons">
