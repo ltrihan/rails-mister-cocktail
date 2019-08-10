@@ -4,8 +4,15 @@
 
     <div class="recette">
       <p>Suivez la recette du chef, et shakez après chaque ajout.</p>
-      <% if @cocktail.doses.nil? %>
+      <% if @cocktail.doses.count == 0 %>
         <p>Pas encore de dose disponible pour ce cocktail.</p>
+      <% else %>
+        <ul>
+          <% @cocktail.doses.each do |dose| %>
+            <li>Ajoutez <%= dose.description %> de <%= dose.ingredient.name %></li>
+          <% end %>
+          <li>C'est prêt ! Savourez votre cocktail fait maison</li>
+        </ul>
       <% end %>
     </div>
 
